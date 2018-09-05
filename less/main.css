@@ -62,4 +62,5 @@ h3.diseño {
 button {
   color: white;
   background-color: #ddad00;
+  text-transform: uppercase;
 }
