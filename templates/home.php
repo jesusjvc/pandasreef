@@ -39,7 +39,11 @@
 
 <section id="slider">
     <div class="slider">
-        <br>holahola
+       <h2><span class="tipo">Galería de</span> <br><span class="interesa">acuarios marinos realizados</span></h2>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        
+    <div class="elfsight-app-6e426192-d18b-4765-8021-656bf900591d"></div>
+        
          
     </div>
 </section>

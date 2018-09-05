@@ -6,7 +6,7 @@
   font-style: italic;
 }
 @font-face {
-  font-family: 'Avenir LT Std';
+  font-family: 'Avenir LT Std Medium';
   src: url('fonts/AvenirLTStd-Medium.woff2') format('woff2'), url('fonts/AvenirLTStd-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
@@ -64,8 +64,23 @@ button {
   color: white;
   background-color: #ddad00;
 }
-.slider {
+#slider {
   background-image: url("../img/fondo_seccion.png");
+}
+#slider h2 span {
+  color: #05136c;
+  font-size: 48px;
+}
+#slider h2 span .tipo {
+  font-family: 'Avenir LT Std Medium';
+}
+#slider h2 span .interesa {
+  font-family: 'Adobe Garamond Pro';
+}
+.slider {
+  width: 700px;
+  display: block;
+  margin-left: 240px;
 }
 section.prueba {
   background-color: #030947;
