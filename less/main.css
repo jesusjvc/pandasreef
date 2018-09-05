@@ -47,6 +47,7 @@ h2 .interesa {
   column-count: 4;
   column-rule-width: 10px;
   margin: 0px -300px 0px 340px;
+  background-image: url('img/diseno_medida.png') !important;
 }
 h3.diseño {
   color: #ddad00;
@@ -62,5 +63,23 @@ h3.diseño {
 button {
   color: white;
   background-color: #ddad00;
-  text-transform: uppercase;
+}
+.slider {
+  background-image: url("../img/fondo_seccion.png");
+}
+section.prueba {
+  background-color: #030947;
+  margin-bottom: auto;
+}
+#contacto .contacto_letra {
+  color: #c8c8c8;
+  text-align: center;
+}
+#contacto hr {
+  text-align: center;
+  width: 450px;
+  border: 1px solid #ddad00;
+}
+#contacto .columna_contacto {
+  column-count: 4;
 }
