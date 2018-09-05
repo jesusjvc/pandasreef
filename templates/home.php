@@ -3,17 +3,37 @@
     get_header();
 ?>
 
-<section id="amparo">
-    <div class="flex">
-        <div class="columna">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/mcl/librosApilados.png" alt="Libros apilados">
+
+<section id="tipo_acuario">
+    
+     <h2><span class="tipo">¿Qué tipo de acuario</span> <br><span class="interesa">te interesa?</span></h2>
+    <div class="tipo_acuario">
+       <div> <br></div>
+        <div class="columna columna1">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/diseno_medida.png" alt="Diseño Medida">
         </div>
-        <div class="columna">
-            <h2>¿Necesita un amparo?</h2>
-            <p>Todo acto de autoridad violatorio de derechos humanos debe ser restituido o debe la autoridad cumplir con lo que el derecho exija. 
+        <div class="columna columna2">
+            <h3 class="diseño">Diseño a la medida</h3>
+            <p class="diseño2">Diseñamos y construimos acuarios marinos a la medida de sus necesidades. Ideales para decorar espacios de lujo en empresas (Hoteles, restaurantes, clubs, oficinas, consultorios, entre otros) y hogares.  
             </p>
-            <button>Contáctenos</button>
+            <button>Me interesa</button>
         </div>
+        <div> <br></div>
+    </div>
+    <div class="tipo_acuario2">
+       <div> <br></div>
+        
+        <div class="columna columna1">
+            <h3 class="diseño">Diseño a la medida</h3>
+            <p class="diseño2">Diseñamos y construimos acuarios marinos a la medida de sus necesidades. Ideales para decorar espacios de lujo en empresas (Hoteles, restaurantes, clubs, oficinas, consultorios, entre otros) y hogares.  
+            </p>
+            <button>Me interesa</button>
+        </div>
+        <div class="columna columna2">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/acuario_prefabricado.png" alt="Acuario Prefabricado">
+        </div>
+
+        <div> <br></div>
     </div>
 </section>
 

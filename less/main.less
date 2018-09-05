@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/AGaramondPro-Italic.woff2') format('woff2'),
+        url('fonts/AGaramondPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('fonts/AvenirLTStd-Medium.woff2') format('woff2'),
+        url('fonts/AvenirLTStd-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Book';
+    src: url('fonts/AvenirLTStd-Book.woff2') format('woff2'),
+        url('fonts/AvenirLTStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('fonts/AvenirLTStd-Roman.woff2') format('woff2'),
+        url('fonts/AvenirLTStd-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @import "vars";
 
 //
@@ -5,5 +38,52 @@
 @import "responsive";
 
 h2 {
-    color: aqua;
+    text-align: center;
+
+
+.tipo {
+     font-family: 'Adobe Garamond Pro';
+     font-size: 55px;
+     color: @amarillo;
+}
+    .interesa {
+        font-family: 'Avenir LT Std Book';
+        font-size: 43px;
+        color: @amarillo;
+    }
+}
+
+.tipo_acuario {
+    
+    text-align: left;
+    column-count: 4;
+    column-rule-width: 10px;
+    margin: 0px 100px 0px -140px;;
+ 
+}
+.tipo_acuario2 {
+    
+    text-align: right;
+    column-count: 4;
+    column-rule-width: 10px;
+    margin: 0px -300px 0px 340px;;
+}
+
+h3.diseño {
+    
+    color: @amarillo;
+    font-size: 16px;
+}
+.diseño2 {
+    
+    color: @gris;
+    font-size: 16px;
+}
+.columna2 {
+    margin-top: 10%!important;
+}
+
+button {
+    color: white;
+    background-color: @amarillo;
 }
