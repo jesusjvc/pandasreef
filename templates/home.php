@@ -49,27 +49,20 @@
 </section>
 
 <section id="contacto" class="prueba">
+    
      <h2><span class="tipo">¡Contáctanos</span> <br><span class="interesa">hoy mismo!</span></h2>
      <p class="contacto_letra">Coméntenos que desea para brindarle una mejor atención. </p>
     <hr>
     <div class="columna_contacto"> 
-       <div><br></div>
-        <div> 
-              <input type="checkbox" > Quiero un acuario a medida<br>
-              <input type="checkbox" > Quiero un acuario prefabricado<br>
-              <input type="text" placeholder="Tu nombre"><br>
-              <input type="email" placeholder="Tu correo"><br>
-              <textarea type="text" placeholder="Mensaje"></textarea><br>
-              <button>Ver catálogo</button>
-        
-        
-        </div>
-        <div>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/correo.png" alt="Correo"> &nbsp;contacto@pandasreef.com<br>
+      
+       <div class="col prueba_columna"><?php echo do_shortcode( '[caldera_form id="CF5b91689843b49"]' ); ?></div>
+
+        <div class="col">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/correo.png" alt="Correo"> &nbsp;contacto@pandasreef.com<br><br>
             
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefono.png" alt="Teléfono"> &nbsp;5522726203<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5581455952<br>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tiempo.png" alt="Horario"> &nbsp;09:00 a.m. a 11:00 p.m.<br>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lugar.png" alt="Lugar"> &nbsp;Rocas 185, Jardines del pedregal, <br>AlvaroObregon, CDMX, <br>CP:01900<br>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefono.png" alt="Teléfono"> &nbsp;5522726203<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5581455952<br><br>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tiempo.png" alt="Horario"> &nbsp;09:00 a.m. a 11:00 p.m.<br><br>
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lugar.png" alt="Lugar"> &nbsp;Rocas 185, Jardines del pedregal, <br>AlvaroObregon, CDMX, <br>CP:01900<br><br><br><br><br>
             <p><br>&nbsp;Síguenos en:&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/redes.png" alt="Redes Sociales"> </p>
         </div>
         
@@ -130,9 +123,7 @@
         </div>
     </div>
 </section>
- <?php 
-    get_footer();
-?>
+
 
 <?php 
     get_footer();

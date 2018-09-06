@@ -64,6 +64,10 @@ button {
   color: white;
   background-color: #ddad00;
 }
+.button_prueba {
+  color: white;
+  background-color: #ddad00;
+}
 #slider {
   background-image: url("../img/fondo_seccion.png");
 }
@@ -82,9 +86,8 @@ button {
   display: block;
   margin-left: 240px;
 }
-section.prueba {
-  background-color: #030947;
-  margin-bottom: auto;
+#contacto {
+  background-color: #030947 !important;
 }
 #contacto .contacto_letra {
   color: #c8c8c8;
@@ -96,5 +99,19 @@ section.prueba {
   border: 1px solid #ddad00;
 }
 #contacto .columna_contacto {
-  column-count: 4;
+  color: #c8c8c8;
+  display: table;
+  /* Make the container element behave like a table */
+  width: 90%;
+  /* Set full-width to expand the whole page */
+  margin-left: 280px;
+}
+#contacto div .col {
+  display: table-cell;
+  /* Make elements inside the container behave like table cells */
+  padding-left: 30px;
+}
+#contacto div .prueba_columna {
+  color: #c8c8c8;
+  width: 30%;
 }

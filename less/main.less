@@ -90,6 +90,10 @@ button {
     background-color: @amarillo;
   
 }
+.button_prueba {
+    color: white;
+    background-color: @amarillo;
+}
 
 #slider {
 
@@ -120,13 +124,10 @@ display:block;
     
  
 }
-section.prueba {
-    background-color: @azul;
-    margin-bottom: auto;
-    
-}
-#contacto {
-    
+
+ #contacto {
+       
+    background-color: @azul!important;
     
     .contacto_letra{
         color: @gris_letra;
@@ -140,9 +141,25 @@ section.prueba {
     border: 1px solid @amarillo;
     }
     .columna_contacto {
-        column-count: 4;
+        color: @gris_letra;
+    display: table; /* Make the container element behave like a table */
+    width: 90%; /* Set full-width to expand the whole page */
+    margin-left: 280px;
+     }
+        div .col {
+            
+    display: table-cell; /* Make elements inside the container behave like table cells */
+        padding-left: 30px;
+
+        }
+     div .prueba_columna {
+         color: @gris_letra;
+         width: 30%;
+         
         
-    }
+     }
+        
+    
     
 }
 
