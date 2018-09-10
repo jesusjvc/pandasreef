@@ -59,7 +59,7 @@ h3.diseño {
 .columna2 {
   margin-top: 10%!important;
 }
-button {
+.buto {
   color: white;
   background-color: #ddad00;
 }
@@ -112,6 +112,16 @@ button {
 }
 #contacto div .prueba_columna {
   width: 30%;
+}
+.acerca {
+  font-family: 'Avenir LT Std Book';
+  font-size: 55px;
+  color: #ddad00;
+}
+.reef {
+  font-family: 'Adobe Garamond Pro';
+  font-size: 55px;
+  color: #ddad00;
 }
 footer {
   font-family: 'Avenir LT Std Medium' !important;
