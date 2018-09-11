@@ -304,7 +304,8 @@ footer {
    ACUARIOS A SU MEDIDA
    ========================================================================== */
 
-#acuarios-medida {
+#acuarios-medida,
+#acuarios-prefabricados {
     .fondo {
         background: url(../img/acuarios-medida/acuario-1.jpg);
     }
@@ -394,6 +395,15 @@ footer {
 }
 
 #faq {
+    
+    &.amarillo{
+        background: @amarillo;
+        
+        h2{
+            color: @azul;
+        }
+    }
+    
     h2 {
         i {
             position: relative;
@@ -402,49 +412,103 @@ footer {
     }
 }
 
-    //ACERCA
-    .acerca_sec {
-        column-count: 2;
-        text-align: right!imporant;
-        background-color: @azul;
-    }
+/* ==========================================================================
+   ACUARIOS PREFABRICADOS
+   ========================================================================== */
 
-    .acerca_sec2 {
-        column-count: 2;
-        text-align: left!important;
-        background-color: @amarillo;
+#acuarios-prefabricados{
+    background: #d0ac03;
+    .fondo{
+        background: url(../img/acuarios-prefabricados/fondo-1.jpg) no-repeat;
     }
-    .acuario_acerca {
-        margin-top: 40px;
-        margin-left: 360px;
-        margin-right: 20px;
-        color: @amarillo;
-        font-family: 'Avenir LT Std Medium';
-    }
-    .acuario_acerca2 {
-        margin-top: 40px;
-        margin-right: 360px;
-        margin-left: 20px;
+    h2{
         color: @azul;
-        font-family: 'Avenir LT Std Medium';
     }
+}
 
-    .mision {
-        margin-left: 360px;
-        text-align: right!imporant;
-        font-family: 'Adobe Garamond Pro';
-        font-size: 40px;
-        color: @amarillo;
+#acuarios-tienda{
+    background: #f7f8f8;
+}
 
-    }
-    .vision {
-        margin-right: 360px;
-        text-align: left!imporant;
-        font-family: 'Adobe Garamond Pro';
-        font-size: 40px;
-        color: @azul;
+#comprar-pagar{
+    .grid{
+        background: url(../img/acuarios-prefabricados/comprar-pagar.jpg) no-repeat center;
+        
+        .col{
+            
+            h2{
+               text-align: left; 
+            }
+            &:first-child{
+                ul{
+                    max-width: 300px;
+                }
+            }
+            
+            &:last-child{
+                padding-left: 190px;
+                ul{
+                    strong{
+                        color: @azul;
+                        display: block;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }    
+}
 
-    }
-    .valores {
-        column-count: 3;
-    }
+
+
+
+//ACERCA
+.acerca_sec {
+    column-count: 2;
+    text-align: right!imporant;
+    background-color: @azul;
+}
+
+.acerca_sec2 {
+    column-count: 2;
+    text-align: left!important;
+    background-color: @amarillo;
+}
+
+.acuario_acerca {
+    margin-top: 40px;
+    margin-left: 360px;
+    margin-right: 20px;
+    color: @amarillo;
+    font-family: 'Avenir LT Std Medium';
+}
+
+.acuario_acerca2 {
+    margin-top: 40px;
+    margin-right: 360px;
+    margin-left: 20px;
+    color: @azul;
+    font-family: 'Avenir LT Std Medium';
+}
+
+.mision {
+    margin-left: 360px;
+    text-align: right!imporant;
+    font-family: 'Adobe Garamond Pro';
+    font-size: 40px;
+    color: @amarillo;
+
+}
+
+.vision {
+    margin-right: 360px;
+    text-align: left!imporant;
+    font-family: 'Adobe Garamond Pro';
+    font-size: 40px;
+    color: @azul;
+
+}
+
+.valores {
+    column-count: 3;
+}

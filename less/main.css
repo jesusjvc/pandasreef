@@ -216,17 +216,21 @@ footer {
 /* ==========================================================================
    ACUARIOS A SU MEDIDA
    ========================================================================== */
-#acuarios-medida .fondo {
+#acuarios-medida .fondo,
+#acuarios-prefabricados .fondo {
   background: url(../img/acuarios-medida/acuario-1.jpg);
 }
-#acuarios-medida h2 {
+#acuarios-medida h2,
+#acuarios-prefabricados h2 {
   text-align: right;
 }
-#acuarios-medida h2 i {
+#acuarios-medida h2 i,
+#acuarios-prefabricados h2 i {
   position: relative;
   left: -100px;
 }
-#acuarios-medida p {
+#acuarios-medida p,
+#acuarios-prefabricados p {
   text-align: right;
   max-width: 300px;
   float: right;
@@ -283,9 +287,47 @@ footer {
   background: url(../img/acuarios-medida/fondo.jpg) no-repeat center;
   background-attachment: fixed;
 }
+#faq.amarillo {
+  background: #ddad00;
+}
+#faq.amarillo h2 {
+  color: #030947;
+}
 #faq h2 i {
   position: relative;
   left: 70px;
+}
+/* ==========================================================================
+   ACUARIOS PREFABRICADOS
+   ========================================================================== */
+#acuarios-prefabricados {
+  background: #d0ac03;
+}
+#acuarios-prefabricados .fondo {
+  background: url(../img/acuarios-prefabricados/fondo-1.jpg) no-repeat;
+}
+#acuarios-prefabricados h2 {
+  color: #030947;
+}
+#acuarios-tienda {
+  background: #f7f8f8;
+}
+#comprar-pagar .grid {
+  background: url(../img/acuarios-prefabricados/comprar-pagar.jpg) no-repeat center;
+}
+#comprar-pagar .grid .col h2 {
+  text-align: left;
+}
+#comprar-pagar .grid .col:first-child ul {
+  max-width: 300px;
+}
+#comprar-pagar .grid .col:last-child {
+  padding-left: 190px;
+}
+#comprar-pagar .grid .col:last-child ul strong {
+  color: #030947;
+  display: block;
+  text-transform: uppercase;
 }
 .acerca_sec {
   column-count: 2;
