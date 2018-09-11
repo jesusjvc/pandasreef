@@ -101,6 +101,80 @@ h2 {
   margin-left: 50px;
   margin-right: 60px;
 }
+#quienes_somos {
+  background-color: #f7f8f8;
+}
+#quienes_somos h2 {
+  text-align: center;
+  position: relative;
+  left: -50px;
+  margin-bottom: 50px;
+}
+#quienes_somos h2 i {
+  position: relative;
+  left: 50px;
+}
+#quienes_somos .col h2 {
+  color: #030947;
+  text-align: left;
+}
+#quienes_somos img {
+  float: right;
+  position: relative;
+  top: 70px;
+}
+#quienes_somos p {
+  position: relative;
+  left: -50px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+#mision {
+  background: #030947;
+}
+#mision .fondo {
+  background: url(../img/mision.png) no-repeat;
+}
+#mision h2 {
+  margin-top: 40px;
+  color: #ddad00;
+  text-align: right;
+}
+#mision h2 i {
+  position: relative;
+  left: -100px;
+}
+#mision p {
+  margin-top: 40px;
+  color: #ddad00;
+  text-align: right;
+  max-width: 300px;
+  float: right;
+  clear: both;
+}
+#vision {
+  background: #ddad00;
+}
+#vision .fondo {
+  background: url(../img/vision.png) no-repeat;
+}
+#vision h2 {
+  margin-top: 40px;
+  color: #030947;
+  text-align: left;
+}
+#vision h2 i {
+  position: relative;
+  right: -100px;
+}
+#vision p {
+  margin-top: 40px;
+  color: #030947;
+  text-align: left;
+  max-width: 300px;
+  float: left;
+  clear: both;
+}
 /*
     .tipo {
         font-family: 'Adobe Garamond Pro';
@@ -261,6 +335,9 @@ footer {
 }
 .grid .col {
   width: 50%;
+}
+.grid .col2 {
+  width: 33%;
 }
 /*Ajuste general*/
 .template-section.padding-50 {
@@ -439,44 +516,12 @@ footer {
   display: block;
   text-transform: uppercase;
 }
-.acerca_sec {
-  column-count: 2;
-  text-align: right!imporant;
-  background-color: #030947;
+#valores {
+  text-align: center;
 }
-.acerca_sec2 {
-  column-count: 2;
-  text-align: left!important;
-  background-color: #ddad00;
+#valores h2 {
+  margin-top: 100px;
 }
-.acuario_acerca {
-  margin-top: 40px;
-  margin-left: 360px;
-  margin-right: 20px;
-  color: #ddad00;
-  font-family: 'Avenir LT Std Medium';
-}
-.acuario_acerca2 {
-  margin-top: 40px;
-  margin-right: 360px;
-  margin-left: 20px;
-  color: #030947;
-  font-family: 'Avenir LT Std Medium';
-}
-.mision {
-  margin-left: 360px;
-  text-align: right!imporant;
-  font-family: 'Adobe Garamond Pro';
-  font-size: 40px;
-  color: #ddad00;
-}
-.vision {
-  margin-right: 360px;
-  text-align: left!imporant;
-  font-family: 'Adobe Garamond Pro';
-  font-size: 40px;
-  color: #030947;
-}
-.valores {
-  column-count: 3;
+#valores p {
+  margin-top: 10px;
 }
