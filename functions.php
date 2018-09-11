@@ -12,4 +12,7 @@ function woodmart_child_enqueue_styles() {
 	}
 
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('bootstrap'), $version );
+     wp_enqueue_script( 'main_js', get_stylesheet_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0', true );
 }
+
+add_action('wp_enqueue_scripts', 'woodmart_child_enqueue_styles');

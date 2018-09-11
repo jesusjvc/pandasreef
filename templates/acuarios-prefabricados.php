@@ -28,8 +28,52 @@
 
 
 
-    <section id="faq" class="template-section amarillo padding-50">
+    <section id="faq" class="template-section amarillo padding-50 ">
         <h2>Preguntas <i>frecuentes</i></h2>
+    <div class="faq card">
+    <article>
+    <h1 data-accordion-element-trigger>¿Qué incluye?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Absolutamente todo lo necesario para la instalación y mantenimiento del tanque con componentes de la más alta calidad, para que una vez armado esté listo para iniciar el ciclado del agua y la posterior introducción de ejemplares marinos.</p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Los acuarios gastan mucha electricidad?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Los componentes incluidos que requieren de corriente son seleccionados por la calidad y la eficiencia en el consumo de energía. </p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Cuál es el tiempo de instalación?</h1>
+    <div data-accordion-element-content class="content">
+      <p>De 1 a 3 horas dependiendo de la experiencia de cada cliente. </p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Qué tan difícil es tener un acuario marino?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Muy fácil, la simplificación de nuestros sistemas y el alto grado de tecnología implementado en los mismos, permiten que la instalación y el mantenimiento sea mucho más simple.</p>
+    </div>
+  </article>
+    <article>
+    <h1 data-accordion-element-trigger>¿Ofrecen servicio de instalación para acuarios prefabricados?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Si, en CDMX, Estado de México y Morelos.</p>
+    </div>
+  </article>
+    <article>
+    <h1 data-accordion-element-trigger>¿Cómo funciona el mantenimiento?</h1>
+    <div data-accordion-element-content class="content">
+      <p>El mantenimiento de acuarios pre fabricados es simple y se puede llevar a cabo con tan solo cumplir algunas tareas semanales y quincenales, las cuales vienen expresadas en nuestro video de mantenimiento.</p>
+    </div>
+  </article>
+      <article>
+    <h1 data-accordion-element-trigger>¿Me venden los peces también?</h1>
+    <div data-accordion-element-content class="content">
+      <p>No. Pero podemos recomendarle donde conseguirlos en varios estados de la República Mexicana. </p>
+    </div>
+  </article>
+   </div>
     </section>
 
     <section id="comprar-pagar" class="template-section padding-50">
