@@ -89,8 +89,39 @@
 
     <section id="faq" class="template-section padding-50">
         <h2>Preguntas <i>frecuentes</i></h2>
+    <div class="faq card">
+    <article>
+    <h1 data-accordion-element-trigger>¿Cuál es el tiempo de instalación?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Para acuarios arquitectónicos personalizados la instalación puede tomar de 2 a 8 semanas dependiendo de la complejidad del proyecto.</p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Los acuarios gastan mucha electricidad?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Los componentes incluidos que requieren de corriente son seleccionados por la calidad y la eficiencia en el consumo de energía. </p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Uds proveen los peces?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Si, ofrecemos una gran variedad de especies con sus permisos legales. Al momento de la visita podrá elegirlos del catálogo y se le presupuestarán aparte.  </p>
+    </div>
+  </article>
+  <article>
+    <h1 data-accordion-element-trigger>¿Ofrecen servicios de reparación, mantenimiento y refacciones?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Si. Ofrecemos todos esos servicios postventa.</p>
+    </div>
+  </article>
+    <article>
+    <h1 data-accordion-element-trigger>¿Los construyen en cualquier parte de México?</h1>
+    <div data-accordion-element-content class="content">
+      <p>Si.</p>
+    </div>
+  </article>
+   </div>
     </section>
-
 
 
     <section id="contacto" class="template-section padding-50">
