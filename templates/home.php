@@ -16,7 +16,8 @@
             <h3 class="diseño">Diseño a la medida</h3>
             <p class="diseño2">Diseñamos y construimos acuarios marinos a la medida de sus necesidades. Ideales para decorar espacios de lujo en empresas (Hoteles, restaurantes, clubs, oficinas, consultorios, entre otros) y hogares.  
             </p>
-            <input  class="buto" type="submit"  value="Me interesa"   >
+            <a href="" class="btn buto">Me interesa</a>
+           
             
         </div>
         <div> <br></div>
@@ -28,7 +29,8 @@
             <h3 class="diseño">Acuarios prefabricados</h3>
             <p class="diseño2">Línea de acuarios prefabricados elaborados con variedad de medidas, diseño superior y los mejores materiales existentes.
             </p>
-            <input  class="buto" type="submit"  value="Ver catálogo"   >
+             <a href="" class="btn buto">Ver catálogo</a>
+            
           
         </div>
         <div class="columna columna2">
@@ -75,6 +77,7 @@
 
 
 <section>
+        
          <h2><span class="acerca">Acerca de</span> <br><span class="reef">Panda’s Reef</span></h2>
     <div class="tipo_acuario">
        <div> <br></div>
@@ -86,7 +89,8 @@
             <p class="diseño2">Somos una empresa con 15 años de experiencia en el diseño y construcción de acuarios marinos arquitectónicos y prefabricados.   
             </p>
             <div class="">
-	<input  class="buto" type="submit"  value="Saber más"   >
+             <a href="" class="btn buto">Saber más</a>
+	
 </div>
 
             
@@ -95,12 +99,8 @@
         <div> <br></div>
     </div>
 </section>
-<footer>
-   <div class="col">
-    <p>Copyright © 2018 Panda’s Reef - Diseño Web por esbrillante.mx</p></div>
-    <div class="col">
-    <img src="//woodmart.xtemos.com/wp-content/uploads/2017/01/payments.png"></div>
-</footer>
+<?php include('footer.php'); ?>
+
 
 <?php 
     get_footer();
