@@ -26,65 +26,168 @@
 h2 {
   text-align: center;
 }
-h2 .tipo {
-  font-family: 'Adobe Garamond Pro';
-  font-size: 55px;
+#tipo_acuario {
+  background-color: #f7f8f8;
+}
+#tipo_acuario h2 {
+  text-align: center;
+  position: relative;
+  left: 50px;
+  margin-bottom: 50px;
+}
+#tipo_acuario h2 i {
+  position: relative;
+  left: -50px;
+}
+#tipo_acuario .caracteristicas1 img {
+  float: right;
+  position: relative;
+  right: -80px;
+}
+#tipo_acuario .caracteristicas1 p {
+  position: relative;
+  left: -50px;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+#tipo_acuario .caracteristicas1 .btn {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#tipo_acuario .caracteristicas1 h3 {
   color: #ddad00;
 }
-h2 .interesa {
-  font-family: 'Avenir LT Std Book';
-  font-size: 43px;
-  color: #ddad00;
+#tipo_acuario .caracteristicas2 img {
+  float: left;
+  position: relative;
+  left: -80px;
 }
-.tipo_acuario {
-  text-align: left;
-  column-count: 4;
-  column-rule-width: 10px;
-  margin: 0px 100px 90px -140px;
-}
-.tipo_acuario2 {
+#tipo_acuario .caracteristicas2 p {
+  position: relative;
+  right: -50px;
+  margin-right: 50px;
+  margin-left: 70px;
   text-align: right;
-  column-count: 4;
-  column-rule-width: 10px;
-  margin: 0px -300px 0px 340px;
 }
-h3.diseño {
+#tipo_acuario .caracteristicas2 .btn {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+#tipo_acuario .caracteristicas2 h3 {
+  text-align: right;
   color: #ddad00;
-  font-size: 16px;
 }
+#acerca_de {
+  background-color: #f7f8f8;
+}
+#acerca_de h2 {
+  text-align: left;
+  position: relative;
+  left: -50px;
+  margin-bottom: 50px;
+}
+#acerca_de h2 i {
+  position: relative;
+  left: 50px;
+}
+#acerca_de img {
+  float: right;
+  position: relative;
+  top: 70px;
+}
+#acerca_de p {
+  position: relative;
+  left: -50px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+/*
+    .tipo {
+        font-family: 'Adobe Garamond Pro';
+        font-size: 55px;
+        color: @amarillo;
+    }
+    .interesa {
+        font-family: 'Avenir LT Std Book';
+        font-size: 43px;
+        color: @amarillo;
+    }
+}
+
+.tipo_acuario {
+
+    text-align: left;
+    column-count: 4;
+    column-rule-width: 10px;
+    margin: 0px 100px 90px -140px;
+
+}
+
+.tipo_acuario2 {
+
+    text-align: right;
+    column-count: 4;
+    column-rule-width: 10px;
+    margin: 0px -300px 0px 340px;
+
+}
+*/
+/*
+h3.diseño {
+
+    color: @amarillo;
+    font-size: 16px;
+}
+
 .diseño2 {
-  color: #89878b;
-  font-size: 16px;
+
+    color: @gris;
+    font-size: 16px;
 }
+
 .columna2 {
-  margin-top: 10%!important;
-}
+    margin-top: 10%!important;
+}*/
 .buto {
   color: white;
   background-color: #ddad00;
 }
+/*
 .button_prueba {
-  color: white;
-  background-color: #ddad00;
-}
+    color: white;
+    background-color: @amarillo;
+}*/
+/*
 #slider {
-  background-image: url("../img/fondo_seccion.png");
+
+    background-image: url("../img/fondo_seccion.png");
+
+    h2 span {
+        color: @azul_letras;
+        font-size: 48px;
+        .tipo {
+
+            font-family: 'Avenir LT Std Medium';
+
+        }
+        .interesa {
+
+            font-family: 'Adobe Garamond Pro';
+
+        }
+    }
+
+
 }
-#slider h2 span {
-  color: #05136c;
-  font-size: 48px;
-}
-#slider h2 span .tipo {
-  font-family: 'Avenir LT Std Medium';
-}
-#slider h2 span .interesa {
-  font-family: 'Adobe Garamond Pro';
-}
+
 .slider {
-  width: 700px;
-  display: block;
-  margin-left: 240px;
+    width: 700px;
+    display: block;
+    margin-left: 240px;
+
+
 }
+*/
 #contacto {
   background-color: #030947;
   color: #fff;
@@ -122,23 +225,30 @@ h3.diseño {
 #contacto .siguenos img:hover {
   transform: translateY(-5px);
 }
+/*
 .acerca {
-  font-family: 'Avenir LT Std Book';
-  font-size: 55px;
-  color: #ddad00;
+    font-family: 'Avenir LT Std Book';
+    font-size: 55px;
+    color: @amarillo;
 }
+
 .reef {
-  font-family: 'Adobe Garamond Pro';
-  font-size: 55px;
-  color: #ddad00;
+    font-family: 'Adobe Garamond Pro';
+    font-size: 55px;
+    color: @amarillo;
 }
+
 footer {
-  font-family: 'Avenir LT Std Medium' !important;
-  column-count: 2;
-  height: 100%;
-  background-size: 100% 100%;
-  background-image: url("../img/footer.png");
+    font-family: 'Avenir LT Std Medium'!important;
+    column-count: 2;
+
+    height: 100%;
+    background-size: 100% 100%;
+
+    background-image: url("../img/footer.png");
+    div .col {}
 }
+*/
 /*Ajuste de FullWidth*/
 .page-template .container {
   max-width: 100%;
