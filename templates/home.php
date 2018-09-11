@@ -29,10 +29,10 @@
         <div class="contenedor">
             <div class="grid">
                 <div class="col">
-                   <h3 class="diseño">Diseño a la medida</h3>
+                   <h3 class="diseño">Acuarios prefabricados</h3>
                     <p class="azul">
                        
-                    Diseñamos y construimos acuarios marinos a la medida de sus necesidades. Ideales para decorar espacios de lujo en empresas (Hoteles, restaurantes, clubs, oficinas, consultorios, entre otros) y hogares. 
+                    Línea de acuarios prefabricados elaborados con variedad de medidas, diseño superior y los mejores materiales existentes. 
                        <br>
                         <a href="#contacto" class="btn amarillo">ME INTERESA</a>
                     </p>
@@ -47,6 +47,7 @@
     </section>
    <section id="galeria" class="template-section padding-50">
         <h2 class="azul">Galería de <i>acuarios marinos a la medida</i></h2>
+        
     </section>
  <section id="contacto" class="template-section padding-50">
 
