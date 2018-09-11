@@ -86,32 +86,41 @@ h3.diseño {
   margin-left: 240px;
 }
 #contacto {
-  background-color: #030947 !important;
+  background-color: #030947;
+  color: #fff;
 }
-#contacto .contacto_letra {
-  color: #c8c8c8;
+#contacto .title p {
   text-align: center;
+  color: #fff;
 }
-#contacto hr {
+#contacto .title hr {
   text-align: center;
   width: 450px;
   border: 1px solid #ddad00;
 }
-#contacto .columna_contacto {
-  color: #c8c8c8;
-  display: table;
-  /* Make the container element behave like a table */
-  width: 90%;
-  /* Set full-width to expand the whole page */
-  margin-left: 280px;
+#contacto .datos {
+  margin-bottom: 10px;
 }
-#contacto div .col {
-  display: table-cell;
-  /* Make elements inside the container behave like table cells */
-  padding-left: 30px;
+#contacto .datos img {
+  margin-right: 10px;
 }
-#contacto div .prueba_columna {
-  width: 30%;
+#contacto .datos .info a {
+  display: block;
+  color: #fff;
+  margin-left: 10px;
+}
+#contacto .siguenos {
+  margin-top: 100px;
+}
+#contacto .siguenos span {
+  padding-right: 10px;
+}
+#contacto .siguenos img {
+  margin-left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+#contacto .siguenos img:hover {
+  transform: translateY(-5px);
 }
 .acerca {
   font-family: 'Avenir LT Std Book';
@@ -129,4 +138,152 @@ footer {
   height: 100%;
   background-size: 100% 100%;
   background-image: url("../img/footer.png");
+}
+/*Ajuste de FullWidth*/
+.page-template .container {
+  max-width: 100%;
+  width: 100%;
+}
+/*Esquema por defecto para las secciones*/
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid .col {
+  width: 50%;
+}
+/*Ajuste general*/
+.template-section.padding-50 {
+  padding: 50px 0;
+}
+.template-section .contenedor {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.template-section .col {
+  min-height: 500px;
+  padding: 60px;
+}
+.template-section h2 {
+  color: #ddad00;
+  font-family: 'Avenir LT Std';
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+.template-section h2 i {
+  font-family: 'Adobe Garamond Pro';
+  display: block;
+  font-size: 1.5em;
+}
+.template-section h2.azul {
+  color: #030947;
+}
+.template-section p,
+.template-section ul {
+  font-size: 1.2em;
+  font-family: 'Avenir LT Std Medium';
+}
+.template-section ul li {
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.template-section ul li::before {
+  content: "•";
+  color: #ddad00;
+  padding-right: 10px;
+  position: absolute;
+  left: -15px;
+}
+.template-section ul.azul li::before {
+  color: #030947;
+}
+.template-section .txt-azul {
+  color: #030947;
+}
+.template-section a.btn {
+  transition: all 0.3s ease-in-out;
+}
+.template-section a.btn.amarillo {
+  background: #ddad00;
+  color: #fff;
+}
+.template-section a.btn.amarillo:hover {
+  background: #030947;
+}
+/* ==========================================================================
+   ACUARIOS A SU MEDIDA
+   ========================================================================== */
+#acuarios-medida .fondo {
+  background: url(../img/acuarios-medida/acuario-1.jpg);
+}
+#acuarios-medida h2 {
+  text-align: right;
+}
+#acuarios-medida h2 i {
+  position: relative;
+  left: -100px;
+}
+#acuarios-medida p {
+  text-align: right;
+  max-width: 300px;
+  float: right;
+  clear: both;
+}
+#beneficios-acuario .fondo {
+  background: url(../img/acuarios-medida/acuario-2.jpg);
+}
+#beneficios-acuario h2 {
+  text-align: left;
+}
+#pasos .fondo {
+  background: url(../img/acuarios-medida/acuario-3.jpg);
+}
+#pasos h2 {
+  text-align: left;
+}
+#pasos h2 i {
+  position: relative;
+  left: 30px;
+}
+#pasos ul {
+  margin-left: 30px;
+}
+#como-pagar {
+  background-color: #f7f8f8;
+}
+#como-pagar h2 {
+  text-align: left;
+  position: relative;
+  left: -50px;
+  margin-bottom: 50px;
+}
+#como-pagar h2 i {
+  position: relative;
+  left: 50px;
+}
+#como-pagar img {
+  float: right;
+  position: relative;
+  right: -80px;
+}
+#como-pagar ul {
+  position: relative;
+  left: -50px;
+  margin-left: 50px;
+}
+#como-pagar ul li strong {
+  color: #030947;
+  display: block;
+  text-transform: uppercase;
+}
+#galeria {
+  background: url(../img/acuarios-medida/fondo.jpg) no-repeat center;
+  background-attachment: fixed;
+}
+#faq h2 i {
+  position: relative;
+  left: 70px;
 }

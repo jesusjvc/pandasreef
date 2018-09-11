@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Adobe Garamond Pro';
     src: url('fonts/AGaramondPro-Italic.woff2') format('woff2'),
-        url('fonts/AGaramondPro-Italic.woff') format('woff');
+    url('fonts/AGaramondPro-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Avenir LT Std Medium';
     src: url('fonts/AvenirLTStd-Medium.woff2') format('woff2'),
-        url('fonts/AvenirLTStd-Medium.woff') format('woff');
+    url('fonts/AvenirLTStd-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'Avenir LT Std Book';
     src: url('fonts/AvenirLTStd-Book.woff2') format('woff2'),
-        url('fonts/AvenirLTStd-Book.woff') format('woff');
+    url('fonts/AvenirLTStd-Book.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Avenir LT Std';
     src: url('fonts/AvenirLTStd-Roman.woff2') format('woff2'),
-        url('fonts/AvenirLTStd-Roman.woff') format('woff');
+    url('fonts/AvenirLTStd-Roman.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,18 +34,17 @@
 @import "vars";
 
 //
-
 @import "responsive";
 
 h2 {
     text-align: center;
 
 
-.tipo {
-     font-family: 'Adobe Garamond Pro';
-     font-size: 55px;
-     color: @amarillo;
-}
+    .tipo {
+        font-family: 'Adobe Garamond Pro';
+        font-size: 55px;
+        color: @amarillo;
+    }
     .interesa {
         font-family: 'Avenir LT Std Book';
         font-size: 43px;
@@ -54,33 +53,36 @@ h2 {
 }
 
 .tipo_acuario {
-    
+
     text-align: left;
     column-count: 4;
     column-rule-width: 10px;
     margin: 0px 100px 0px -140px;
-    
- 
+
+
 }
+
 .tipo_acuario2 {
-    
+
     text-align: right;
     column-count: 4;
     column-rule-width: 10px;
     margin: 0px -300px 0px 340px;
-   
+
 }
 
 h3.diseño {
-    
+
     color: @amarillo;
     font-size: 16px;
 }
+
 .diseño2 {
-    
+
     color: @gris;
     font-size: 16px;
 }
+
 .columna2 {
     margin-top: 10%!important;
 }
@@ -88,8 +90,9 @@ h3.diseño {
 .buto {
     color: white;
     background-color: @amarillo;
-  
+
 }
+
 .button_prueba {
     color: white;
     background-color: @amarillo;
@@ -98,96 +101,303 @@ h3.diseño {
 #slider {
 
     background-image: url("../img/fondo_seccion.png");
-    
+
     h2 span {
         color: @azul_letras;
         font-size: 48px;
-    .tipo {
-        
-        font-family: 'Avenir LT Std Medium';
-        
-    }
-   .interesa {
-        
-        font-family: 'Adobe Garamond Pro';
-        
-    }
-    }
-    
-     
-}
+        .tipo {
 
-.slider{
- width: 700px;
-display:block;
-    margin-left: 240px;
-    
- 
-}
-
- #contacto {
-       
-    background-color: @azul!important;
-    
-    .contacto_letra{
-        color: @gris_letra;
-        text-align: center;
-        
-    }
-    hr {
-   
-        text-align: center;
-        width: 450px;
-    border: 1px solid @amarillo;
-    }
-    .columna_contacto {
-        color: @gris_letra;
-    display: table; /* Make the container element behave like a table */
-    width: 90%; /* Set full-width to expand the whole page */
-    margin-left: 280px;
-     }
-        div .col {
-            
-    display: table-cell; /* Make elements inside the container behave like table cells */
-        padding-left: 30px;
+            font-family: 'Avenir LT Std Medium';
 
         }
-     div .prueba_columna {
-        
-        
-         width: 30%;
-        
-         
-        
-     }
-        
-    
-    
+        .interesa {
+
+            font-family: 'Adobe Garamond Pro';
+
+        }
+    }
+
+
 }
+
+.slider {
+    width: 700px;
+    display: block;
+    margin-left: 240px;
+
+
+}
+
+#contacto {
+    background-color: @azul;
+    color: #fff;
+    .title {
+        p {
+            text-align: center;
+            color: #fff;
+        }
+
+        hr {
+            text-align: center;
+            width: 450px;
+            border: 1px solid @amarillo;
+        }
+    }
+
+    .datos {
+        img{
+            margin-right: 10px;
+        }
+        .info {           
+            a {
+                display: block;
+                color: #fff;
+                margin-left: 10px;
+
+            }
+        }
+        margin-bottom: 10px;
+    }
+    
+    .siguenos{
+        margin-top: 100px;
+        span{
+            padding-right: 10px;
+        }
+        img{
+            margin-left: 0px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+}
+
 .acerca {
-     font-family: 'Avenir LT Std Book';
+    font-family: 'Avenir LT Std Book';
     font-size: 55px;
-     color: @amarillo;
+    color: @amarillo;
 }
+
 .reef {
-     font-family: 'Adobe Garamond Pro';
+    font-family: 'Adobe Garamond Pro';
     font-size: 55px;
-     color: @amarillo;
+    color: @amarillo;
 }
 
 footer {
     font-family: 'Avenir LT Std Medium'!important;
-      column-count: 2;
-  
+    column-count: 2;
+
     height: 100%;
     background-size: 100% 100%;
-    
-     background-image: url("../img/footer.png");
-    div .col {
-   
-        
 
-        }
+    background-image: url("../img/footer.png");
+    div .col {}
 }
 
+/*Ajuste de FullWidth*/
 
+.page-template {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/*Esquema por defecto para las secciones*/
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+        width: 50%;
+    }
+}
+
+/*Ajuste general*/
+
+.template-section {
+    &.padding-50 {
+        padding: 50px 0;
+    }
+
+    .contenedor {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col {
+        min-height: 500px;
+        padding: 60px;
+    }
+
+    h2 {
+        color: @amarillo;
+        font-family: 'Avenir LT Std';
+        font-size: 2.5em;
+        font-weight: normal;
+        line-height: 1.3em;
+        i {
+            font-family: 'Adobe Garamond Pro';
+            display: block;
+            font-size: 1.5em;
+        }
+
+        &.azul {
+            color: @azul;
+        }
+
+    }
+
+    p,
+    ul {
+        font-size: 1.2em;
+        font-family: 'Avenir LT Std Medium';
+    }
+
+    ul {
+        li {
+            position: relative;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            &::before {
+                content: "•";
+                color: @amarillo;
+                padding-right: 10px;
+                position: absolute;
+                left: -15px;
+            }
+        }
+
+        &.azul {
+            li {
+                &::before {
+                    color: @azul
+                }
+            }
+        }
+    }
+
+
+
+    .txt-azul {
+        color: @azul;
+    }
+
+    a.btn {
+        transition: all 0.3s ease-in-out;
+
+        &.amarillo {
+            background: @amarillo;
+            color: #fff;
+            &:hover {
+                background: @azul;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   ACUARIOS A SU MEDIDA
+   ========================================================================== */
+
+#acuarios-medida {
+    .fondo {
+        background: url(../img/acuarios-medida/acuario-1.jpg);
+    }
+
+    h2 {
+        text-align: right;
+        i {
+            position: relative;
+            left: -100px;
+        }
+    }
+
+    p {
+        text-align: right;
+        max-width: 300px;
+        float: right;
+        clear: both;
+    }
+}
+
+#beneficios-acuario {
+    .fondo {
+        background: url(../img/acuarios-medida/acuario-2.jpg);
+    }
+
+    h2 {
+        text-align: left;
+    }
+}
+
+#pasos {
+    .fondo {
+        background: url(../img/acuarios-medida/acuario-3.jpg);
+    }
+
+    h2 {
+        text-align: left;
+        i {
+            position: relative;
+            left: 30px;
+        }
+    }
+
+    ul {
+        margin-left: 30px;
+    }
+
+}
+
+#como-pagar {
+    background-color: #f7f8f8;
+    h2 {
+        text-align: left;
+        position: relative;
+        left: -50px;
+        margin-bottom: 50px;
+        i {
+            position: relative;
+            left: 50px;
+        }
+    }
+
+    img {
+        float: right;
+        position: relative;
+        right: -80px;
+    }
+
+    ul {
+        position: relative;
+        left: -50px;
+        margin-left: 50px;
+        li {
+            strong {
+                color: @azul;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#galeria {
+    background: url(../img/acuarios-medida/fondo.jpg) no-repeat center;
+    background-attachment: fixed;
+}
+
+#faq {
+    h2 {
+        i {
+            position: relative;
+            left: 70px;
+        }
+    }
+}
