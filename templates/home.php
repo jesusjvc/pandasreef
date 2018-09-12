@@ -73,7 +73,7 @@
                        
                     Línea de acuarios prefabricados elaborados con variedad de medidas, diseño superior y los mejores materiales existentes. 
                        <br>
-                        <a href="#contacto" class="btn amarillo">ME INTERESA</a>
+                        <a href="#contacto" class="btn amarillo">VER CATÁLOGO</a>
                     </p>
                 </div>
                 <div class="col">
