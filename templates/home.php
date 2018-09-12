@@ -86,6 +86,7 @@
     </section>
    <section id="galeria" class="template-section padding-50">
         <h2 class="azul">Galería de <i>acuarios marinos a la medida</i></h2>
+         <?php echo do_shortcode( '[elfsight_instagram_feed id="1"]' ); ?>
         
     </section>
  <section id="contacto" class="template-section padding-50">
