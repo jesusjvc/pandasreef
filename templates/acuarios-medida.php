@@ -171,12 +171,12 @@
                     </div>
 
 
-                    <div class="siguenos">
-                        
+                      <div class="siguenos">
+
                         <span> Síguenos en: </span>
-                                                
-                        <a href="#" title="Síguenos en Instagram"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt=""></a>
-                        <a href="#" title="Síguenos en Facebook"><img src="" alt="">
+
+                        <a href="https://www.facebook.com/pandasreef/" title="Síguenos en Instagram"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/pandasreef/" title="Síguenos en Facebook"><img src="" alt="">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="">
                         </a>
                     </div>
