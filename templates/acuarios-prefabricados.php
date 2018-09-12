@@ -22,6 +22,7 @@
     <section id="acuarios-tienda" class="template-section padding-50">
         <div class="contenedor">
             <h2>Elige tu <i>acuario</i></h2>
+            <?php echo do_shortcode('[vc_row][vc_column][woodmart_products columns="3"][/vc_column][/vc_row]'); ?>
         </div>
     </section>
 
