@@ -59,7 +59,7 @@
                      
                         
                     </p>
-                    <a href="#contacto" class="btn amarillo">ME INTERESA</a>
+                    <a href="/acuarios-a-su-medida/" class="btn amarillo">ME INTERESA</a>
                 </div>
             </div>
         </div>
@@ -73,7 +73,7 @@
                        
                     Línea de acuarios prefabricados elaborados con variedad de medidas, diseño superior y los mejores materiales existentes. 
                        <br>
-                        <a href="#contacto" class="btn amarillo">VER CATÁLOGO</a>
+                        <a href="/acuarios-prefabricados/" class="btn amarillo">VER CATÁLOGO</a>
                     </p>
                 </div>
                 <div class="col">
@@ -139,8 +139,8 @@
 
                         <span> Síguenos en: </span>
 
-                        <a href="#" title="Síguenos en Instagram"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt=""></a>
-                        <a href="#" title="Síguenos en Facebook"><img src="" alt="">
+                        <a href="https://www.facebook.com/pandasreef/" title="Síguenos en Instagram"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/pandasreef/" title="Síguenos en Facebook"><img src="" alt="">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/facebook.png" alt="">
                         </a>
                     </div>
@@ -165,7 +165,7 @@
                         
                        
                     </p>
-                     <a href="#contacto" class="btn amarillo">SABER MÁS</a>
+                     <a href="/quienes-somos/" class="btn amarillo">SABER MÁS</a>
                 </div>
             </div>
         </div>
