@@ -253,6 +253,9 @@ h3.diseño {
   background-color: #030947;
   color: #fff;
 }
+#contacto form label {
+  color: #c8c8c8;
+}
 #contacto .title p {
   text-align: center;
   color: #fff;
