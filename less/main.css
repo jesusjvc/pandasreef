@@ -116,6 +116,7 @@ h2 {
   text-align: center;
   position: relative;
   left: -50px;
+  padding-top: 40px!important;
   margin-bottom: 50px;
 }
 #quienes_somos h2 i {
@@ -766,4 +767,8 @@ footer {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
+}
+/**FOOTER***/
+.min-footer {
+  padding-top: 145px;
 }
