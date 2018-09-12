@@ -767,3 +767,85 @@ footer {
     transform: rotate(90deg);
   }
 }
+@media screen and (min-width: 1025px) {
+  /*Ajuste de logo al momento de hacer scroll*/
+  .whb-sticked .whb-general-header .woodmart-logo img {
+    transform: scale(1.6) translateY(11px);
+  }
+}
+/*@media screen and (orientation:portrait) {
+    
+}
+
+@media screen and (orientation:landscape) and (max) {
+    
+}*/
+@media screen and (max-width: 750px) {
+  /*Esquema por defecto para las secciones*/
+  .grid .col {
+    width: 100%;
+  }
+  .grid .col2 {
+    width: 100%;
+  }
+  .grid.invertido {
+    flex-wrap: wrap-reverse;
+  }
+  .template-section .col {
+    min-height: auto;
+    padding: 20px;
+  }
+  /* Home */
+  #tipo_acuario {
+    position: relative;
+    z-index: 100;
+    background-color: #f7f8f8;
+    padding-top: 100px;
+  }
+  #tipo_acuario h2 {
+    text-align: center;
+    position: relative;
+    left: 50px;
+    margin-bottom: 50px;
+  }
+  #tipo_acuario h2 i {
+    position: relative;
+    left: -50px;
+  }
+  #tipo_acuario .caracteristicas1 img {
+    right: 0px;
+  }
+  #tipo_acuario .caracteristicas1 p {
+    position: relative;
+    left: -50px;
+    margin-left: 50px;
+    margin-right: 70px;
+  }
+  #tipo_acuario .caracteristicas1 .btn {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  #tipo_acuario .caracteristicas1 h3 {
+    color: #ddad00;
+  }
+  #tipo_acuario .caracteristicas2 img {
+    float: left;
+    position: relative;
+    left: -80px;
+  }
+  #tipo_acuario .caracteristicas2 p {
+    position: relative;
+    right: -50px;
+    margin-right: 50px;
+    margin-left: 70px;
+    text-align: right;
+  }
+  #tipo_acuario .caracteristicas2 .btn {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  #tipo_acuario .caracteristicas2 h3 {
+    text-align: right;
+    color: #ddad00;
+  }
+}

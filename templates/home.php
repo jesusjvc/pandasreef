@@ -66,7 +66,7 @@
         </div>
         <div class="caracteristicas2">
         <div class="contenedor">
-            <div class="grid">
+            <div class="grid invertido">
                 <div class="col">
                    <h3 class="diseño">Acuarios prefabricados</h3>
                     <p class="azul">
