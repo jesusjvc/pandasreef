@@ -1,190 +1,5 @@
-var _createClass = function () {function defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}return function (Constructor, protoProps, staticProps) {if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;};}();function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        >>>>>>>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Wanna include in your project?
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        More documentation on github:
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        https://github.com/cant89/gianni-accordion-js
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        >>>>>>>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        **/
 
-var gianniAccordion = function () {
-  return function () {_createClass(_class, [{ key: 'transitionendEventName', value: function transitionendEventName()
-
-      {
-        var i,
-        el = document.createElement('div'),
-        transitions = {
-          'transition': 'transitionend',
-          'OTransition': 'otransitionend',
-          'MozTransition': 'transitionend',
-          'WebkitTransition': 'webkitTransitionEnd' };
-
-
-        for (i in transitions) {
-          if (transitions.hasOwnProperty(i) && el.style[i] !== undefined) {
-            return transitions[i];
-          }
-        }
-      } }, { key: 'expand', value: function expand(
-
-      el) {
-        function resetHeight(ev) {var _this = this;
-          if (ev.target != el.content) return;
-          el.content.removeEventListener(this.transitionendevent, bindEvent);
-
-          if (!el.isOpen) return;
-
-          requestAnimationFrame(function () {
-            el.content.style.transition = '0';
-            el.content.style.height = 'auto';
-
-            requestAnimationFrame(function () {
-              el.content.style.height = null;
-              el.content.style.transition = null;
-
-              _this.fire("elementOpened", el);
-            });
-          });
-        }
-
-        var bindEvent = resetHeight.bind(this);
-        el.content.addEventListener(this.transitionendevent, bindEvent);
-
-        el.isOpen = true;
-        el.content.style.height = el.content.scrollHeight + "px";
-      } }, { key: 'collapse', value: function collapse(
-
-      el) {
-
-        function endTransition(ev) {
-          if (ev.target != el.content) return;
-          el.content.removeEventListener(this.transitionendevent, bindEvent);
-
-          if (el.isOpen) return;
-
-          this.fire("elementClosed", el);
-        }
-
-        var bindEvent = endTransition.bind(this);
-        el.content.addEventListener(this.transitionendevent, bindEvent);
-
-        el.isOpen = false;
-
-        requestAnimationFrame(function () {
-          el.content.style.transition = '0';
-          el.content.style.height = el.content.scrollHeight + "px";
-
-          requestAnimationFrame(function () {
-            el.content.style.transition = null;
-            el.content.style.height = 0;
-          });
-        });
-      } }, { key: 'open', value: function open(
-
-      el) {
-        el.selected = true;
-        this.fire("elementSelected", el);
-        this.expand(el);
-        el.wrapper.classList.add(this.selectedClass);
-      } }, { key: 'close', value: function close(
-
-      el) {
-        el.selected = false;
-        this.fire("elementUnselected", el);
-        this.collapse(el);
-        el.wrapper.classList.remove(this.selectedClass);
-      } }, { key: 'toggle', value: function toggle(
-
-      el) {var _this2 = this;
-        if (el.selected) {
-          this.close(el);
-        } else {
-          this.open(el);
-
-          if (this.oneAtATime) {
-            this.els.filter(function (e) {return e != el && e.selected;}).forEach(function (e) {
-              _this2.close(e);
-            });
-          }
-        }
-      } }, { key: 'attachEvents', value: function attachEvents()
-
-      {var _this3 = this;
-        this.els.forEach(function (el, i) {
-          el.trigger.addEventListener("click", _this3.toggle.bind(_this3, el));
-        });
-      } }, { key: 'setDefaultData', value: function setDefaultData()
-
-      {
-        this.els = [];
-        this.events = {
-          'elementSelected': [],
-          'elementOpened': [],
-          'elementUnselected': [],
-          'elementClosed': [] };
-
-        this.transitionendevent = this.transitionendEventName();
-        this.oneAtATime = true;
-        this.selectedClass = "selected";
-        this.trigger = "[data-accordion-element-trigger]";
-        this.content = "[data-accordion-element-content]";
-      } }, { key: 'setCustomData', value: function setCustomData(
-
-      data) {
-        var keys = Object.keys(data);
-
-        for (var i = 0; i < keys.length; i++) {
-          this[keys[i]] = data[keys[i]];
-        }
-      } }, { key: 'fire', value: function fire(
-
-      eventName, el) {
-        var callbacks = this.events[eventName];
-        for (var i = 0; i < callbacks.length; i++) {
-          callbacks[i](el);
-        }
-      } }, { key: 'on', value: function on(
-
-      eventName, cb) {
-        if (!this.events[eventName]) return;
-        this.events[eventName].push(cb);
-      } }]);
-
-    function _class(data) {var _this4 = this;_classCallCheck(this, _class);
-      this.setDefaultData();
-      this.setCustomData(data); // ES6 => Object.assign(this, data)
-
-      [].forEach.call(document.querySelectorAll(this.elements), function (el, i) {
-        _this4.els.push({
-          wrapper: el,
-          trigger: el.querySelector(_this4.trigger),
-          content: el.querySelector(_this4.content) });
-
-
-        _this4.els[i].content.style.height = 0;
-      });
-
-      this.attachEvents();
-    }return _class;}();
-
-
-}();
-
-var myAccordion = new gianniAccordion({
-  elements: ".card article" });
-
-
-myAccordion.on("elementSelected", function (data) {
-  console.log("elementOpened", data);
-});
-
-
-(function($) {
   
-   
     window.CanvasSlideshow = function( options ) {
 
       
@@ -194,14 +9,13 @@ myAccordion.on("elementSelected", function (data) {
       var that  =   this;
 
 
-      
+
       //  OPTIONS
       /// ---------------------------      
       options                     = options || {};
       options.stageWidth          = options.hasOwnProperty('stageWidth') ? options.stageWidth : 1920;
       options.stageHeight         = options.hasOwnProperty('stageHeight') ? options.stageHeight : 1080;
       options.pixiSprites         = options.hasOwnProperty('sprites') ? options.sprites : [];
-      options.centerSprites       = options.hasOwnProperty('centerSprites') ? options.centerSprites : false;
       options.texts               = options.hasOwnProperty('texts') ? options.texts : [];
       options.autoPlay            = options.hasOwnProperty('autoPlay') ? options.autoPlay : true;
       options.autoPlaySpeed       = options.hasOwnProperty('autoPlaySpeed') ? options.autoPlaySpeed : [10, 3];
@@ -264,7 +78,6 @@ myAccordion.on("elementSelected", function (data) {
         // Enable Interactions
         stage.interactive = true;
         
-        console.log(renderer.view.style);
   
         // Fit renderer to the screen
         if ( options.fullScreen === true ) {
@@ -273,13 +86,13 @@ myAccordion.on("elementSelected", function (data) {
           renderer.view.style.height    = '100%';
           renderer.view.style.top       = '50%';
           renderer.view.style.left      = '50%';
-          renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.2)';           
-          renderer.view.style.transform = 'translate( -50%, -50% ) scale(1.2)';           
+          renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.2)';
+          renderer.view.style.transform = 'translate( -50%, -50% ) scale(1.2)';     
         } else {
           renderer.view.style.maxWidth  = '100%';
           renderer.view.style.top       = '50%';
           renderer.view.style.left      = '50%';
-          renderer.view.style.webkitTransform = 'translate( -50%, -50% )';           
+          renderer.view.style.webkitTransform = 'translate( -50%, -50% )';
           renderer.view.style.transform = 'translate( -50%, -50% )';          
         }
         
@@ -337,14 +150,12 @@ myAccordion.on("elementSelected", function (data) {
             richText.y = image.height / 2;                     
           }
           
-          if ( options.centerSprites === true ) {
-            image.anchor.set(0.5);
-            image.x = renderer.width / 2;
-            image.y = renderer.height / 2;            
-          }
+          /* */
+          // image.anchor.set(0.5);
+          // image.x = renderer.width / 2;
+          // image.y = renderer.height / 2;            
           // image.transform.scale.x = 1.3;
           // image.transform.scale.y = 1.3;
-         
 
           
           if ( i !== 0  ) {
@@ -420,12 +231,13 @@ myAccordion.on("elementSelected", function (data) {
         if ( baseTimeline.isActive() ) {
           return;
         }        
-        
+
+        // DEMO 2
         baseTimeline
-          .to(displacementFilter.scale, 1, { x: options.displaceScale[0], y: options.displaceScale[1]  })
-          .to(slideImages[that.currentIndex], 0.5, { alpha: 0 })
-          .to(slideImages[newIndex], 0.5, { alpha: 1 })          
-          .to(displacementFilter.scale, 1, { x: options.displaceScaleTo[0], y: options.displaceScaleTo[1] } );
+        .to(displacementFilter.scale, 1.5, { x: options.displaceScale[0], y: options.displaceScale[1], ease: Power2.easeOut  })
+        .to(slideImages[that.currentIndex], 1.5, { alpha: 0, ease: Power2.easeOut }, 0)
+        .to(slideImages[newIndex], 1, { alpha: 1, ease: Power2.easeOut }, 1)
+        .to(displacementFilter.scale, 1.5, { x: options.displaceScaleTo[0], y: options.displaceScaleTo[1], ease: Expo.easeOut }, 0.8 );
 
       };
 
@@ -475,8 +287,7 @@ myAccordion.on("elementSelected", function (data) {
 
       /// ---------------------------
       //  INIT FUNCTIONS
-      /// ---------------------------    
-
+      /// ---------------------------     
       this.init = function() {
 
         
@@ -494,8 +305,6 @@ myAccordion.on("elementSelected", function (data) {
         
 
       };
-
-
 
       
       /// ---------------------------
@@ -567,6 +376,7 @@ myAccordion.on("elementSelected", function (data) {
         }
       
       }
+      
       
       
       /// ---------------------------
@@ -668,7 +478,4 @@ myAccordion.on("elementSelected", function (data) {
 
       
     };
-
-  })(); 
-
 
