@@ -8,8 +8,12 @@
  * Copyright 2017, Codrops
  * http://www.codrops.com
  */
-{
-	setTimeout(() => document.body.classList.add('render'), 60);
+
+(function($) {
+
+                jQuery(document).ready(function($) {
+
+	setTimeout(() => document.body.classList.add('render'), 120);
 	const navdemos = Array.from(document.querySelectorAll('nav.demos > .demo'));
 	const total = navdemos.length;
 	const current = navdemos.findIndex(el => el.classList.contains('demo--current'));
@@ -37,4 +41,5 @@
 		navigate(linkEl);
 	});
 	*/
-}
+});
+    })(jQuery);

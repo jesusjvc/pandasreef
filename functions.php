@@ -24,7 +24,7 @@ function woodmart_child_enqueue_styles() {
     
     wp_enqueue_style( 'component-liquid', get_stylesheet_directory_uri() . '/css/component.css' );    
     
-    wp_enqueue_script( 'demojs', get_stylesheet_directory_uri() . '/js/demo.js');     
+    wp_enqueue_script( 'demojs', get_stylesheet_directory_uri() . '/js/demo.js', array( 'jquery' ) );     
     wp_enqueue_script( 'pixi', get_stylesheet_directory_uri() . '/js/pixi.min.js');
     
     wp_enqueue_script( 'TweenMax', get_stylesheet_directory_uri() . '/js/TweenMax.min.js');

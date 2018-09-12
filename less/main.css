@@ -27,8 +27,10 @@ h2 {
   text-align: center;
 }
 #tipo_acuario {
+  position: relative;
+  z-index: 100;
   background-color: #f7f8f8;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 #tipo_acuario h2 {
   text-align: center;
