@@ -28,6 +28,11 @@
         } 
     }
     
+            .btn {
+                padding: 15px 90px;
+                margin-left: 25px;
+            }
+
     
 
     .template-section {
@@ -38,9 +43,8 @@
     }
     /* Home */
     #tipo_acuario {
-        position: relative;
+       position: relative;
         z-index: 100;
-        background-color: #f7f8f8;
         padding-top: 100px;
         h2 {
             text-align: center;
@@ -52,50 +56,53 @@
                 left: -50px;
             }
         }
-        .caracteristicas1 {
+        
+        .caracteristicas1, .caracteristicas2 {
             img {
                 right: 0px;
+                left: 0px;
+                position: relative;
+            }
+            h3 {
+                text-align: center;
             }
 
             p {
-                position: relative;
-                left: -50px;
-                margin-left: 50px;
-                margin-right: 70px;
+                    text-align: justify;
+                margin-left: 0;
+                margin-right: 0;
+                left: 0;
             }
-            .btn {
-                margin-top: 30px;
-                margin-left: 10px;
-            }
-            h3 {
-                color: @amarillo;
-            }
+            
         }
-        .caracteristicas2 {
-            img {
-                float: left;
-                position: relative;
-                left: -80px;
-            }
-
-            p {
-                position: relative;
-                right: -50px;
-                margin-right: 50px;
-                margin-left: 70px;
-
-                text-align: right;
-            }
-            .btn {
-                margin-top: 30px;
-                margin-left: 10px;
-            }
-            h3 {
-                text-align: right;
-                color: @amarillo;
-            }
-        }
-
-
     }
+    #contacto {
+        .datos {
+    margin-bottom: 10px;
+    margin-left: 30px;
+            }
+   .siguenos span {
+    padding-right: 10px;
+    margin-left: 30px;
+        }
+    }
+        
+        #acerca_de {
+            h2 {
+                position: relative;
+                padding-top: 40px;
+                left: -50px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+             p {
+                position: relative;
+                left: 0px;
+                padding-top: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    
 }
+
