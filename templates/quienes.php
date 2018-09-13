@@ -38,7 +38,7 @@
         </div>
     </section>
         <section id="vision" class="template-section">
-        <div class="grid">
+        <div class="grid invertido">
             <div class="col fondo"></div>
             <div class="col">
                 <h2>Visión</h2>

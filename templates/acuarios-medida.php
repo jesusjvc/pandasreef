@@ -20,7 +20,7 @@
     </section>
 
     <section id="beneficios-acuario" class="template-section">
-        <div class="grid">
+        <div class="grid invertido">
             <div class="col fondo"></div>
             <div class="col">
                 <h2><i>Beneficios</i>que te ofrecemos:</h2>

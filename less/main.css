@@ -781,6 +781,11 @@ footer {
     
 }*/
 @media screen and (max-width: 750px) {
+  /*LOGO*/
+  .whb-scroll-stick .woodmart-logo img {
+    padding-top: 0;
+    transform: scale(2) translateY(15px);
+  }
   /*Esquema por defecto para las secciones*/
   .grid .col {
     width: 100%;
@@ -791,9 +796,9 @@ footer {
   .grid.invertido {
     flex-wrap: wrap-reverse;
   }
-  .btn {
-    padding: 15px 90px;
-    margin-left: 25px;
+  .template-section a.btn {
+    margin: 0 auto;
+    display: block;
   }
   .template-section .col {
     min-height: auto;
@@ -854,6 +859,79 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  /*********** QUIENES SOMOS */
+  #quienes_somos img {
+    top: auto;
+  }
+  #quienes_somos .col h2 {
+    text-align: center;
+  }
+  #quienes_somos p {
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fondo {
+    min-height: 400px!important;
+  }
+  .card {
+    width: auto;
+  }
+  #comprar-pagar .grid {
+    background-position: center 180px;
+  }
+  #comprar-pagar .grid .col {
+    margin-top: 10px;
+  }
+  #comprar-pagar .grid .col h2 {
+    text-align: center;
+  }
+  #comprar-pagar .grid .col:first-child ul {
+    max-width: 300px;
+  }
+  #comprar-pagar .grid .col:last-child {
+    padding-left: 0px;
+    /* padding-bottom: 0px; */
+    margin-top: 250px;
+  }
+  #comprar-pagar .grid .col:last-child ul strong {
+    color: #030947;
+    display: block;
+    text-transform: uppercase;
+  }
+}
+#pasos h2 {
+  text-align: center;
+}
+#pasos h2 i {
+  position: relative;
+  left: 0px;
+}
+#como-pagar h2 {
+  text-align: right;
+  position: relative;
+  left: 00px;
+  margin-bottom: 00px;
+}
+#como-pagar h2 i {
+  position: relative;
+  left: 00px;
+}
+#como-pagar img {
+  float: center;
+  position: relative;
+  right: 0px;
+}
+#como-pagar ul {
+  position: relative;
+  left: -50px;
+  margin-left: 50px;
+}
+#como-pagar ul li strong {
+  color: #030947;
+  display: block;
+  text-transform: uppercase;
 }
 /**FOOTER***/
 .min-footer {

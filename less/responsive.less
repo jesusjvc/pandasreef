@@ -1,4 +1,6 @@
 //main: main.less
+
+
 @media screen and (min-width: 1025px) {
     /*Ajuste de logo al momento de hacer scroll*/
     .whb-sticked .whb-general-header .woodmart-logo img {
@@ -14,6 +16,12 @@
 }*/
 
 @media screen and (max-width: 750px) {
+    
+    /*LOGO*/
+    .whb-scroll-stick .woodmart-logo img {
+    padding-top: 0;
+    transform: scale(2) translateY(15px);
+}
     /*Esquema por defecto para las secciones*/
     .grid {
         .col {
@@ -28,12 +36,11 @@
         } 
     }
     
-            .btn {
-                padding: 15px 90px;
-                margin-left: 25px;
-            }
+.template-section a.btn {
+    margin: 0 auto;
+    display: block;
+}
 
-    
 
     .template-section {
         .col {
@@ -104,5 +111,116 @@
             }
         }
     
+
+/*********** QUIENES SOMOS */////////////
+
+#quienes_somos {
+
+img {
+    top: auto;
+    }
+    .col h2 {
+    text-align: center;
+}
+     p {
+    position: relative;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
 }
 
+   
+        .fondo {
+    min-height: 400px!important;
+    }
+    
+    .card {
+    width: auto;
+    }
+    
+
+#comprar-pagar {
+    .grid {
+           background-position: center 180px;
+       
+        .col {
+          margin-top: 10px;     
+
+            h2 {
+                text-align: center;
+            }
+            &:first-child {
+               
+                ul {
+                    max-width: 300px;
+                }
+            }
+
+            &:last-child {
+                    padding-left: 0px;
+    
+    /* padding-bottom: 0px; */
+            margin-top: 250px;
+                ul {
+                    strong {
+                        color: @azul;
+                        display: block;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+}
+
+
+//MEDIDAS  
+#pasos {
+h2 {
+    text-align: center; 
+        i {
+    position: relative;
+     left: 0px; 
+    }
+}
+}
+
+
+
+#como-pagar {
+    
+    h2 {
+        text-align: right;
+        position: relative;
+        left: 00px;
+        margin-bottom: 00px;
+        i {
+            position: relative;
+            left: 00px;
+        }
+    }
+
+    img {
+        float: center;
+        position: relative;
+        right: 0px;
+    }
+
+    ul {
+        position: relative;
+        left: -50px;
+        margin-left: 50px;
+        li {
+            strong {
+                color: @azul;
+                display: block;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
