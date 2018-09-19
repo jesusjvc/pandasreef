@@ -70,29 +70,46 @@
 
 
         <script>
-            var spriteImages = document.querySelectorAll('.slide-item__image');
-            var spriteImagesSrc = [];
-
-            for (var i = 0; i < spriteImages.length; i++) {
-                var img = spriteImages[i];
-                spriteImagesSrc.push(img.getAttribute('src'));
-            }
-
-            var initCanvasSlideshow = new CanvasSlideshow({
-                sprites: spriteImagesSrc,
-                displacementImage: '<?php echo get_stylesheet_directory_uri(); ?>/img/dmaps/2048x2048/clouds.jpg',
-                autoPlay: true,
-                autoPlaySpeed: [10, 3],
-                displaceScale: [200, 70]
-            });
-
-
             (function($) {
+                
+                var sizeWindow = $( window ).width();
+                var stageWidth = 1920;
+                
+                    if(sizeWindow < 750){
+                       
+                         $(".slide-1").attr("src",'<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-1-responsive.jpg');
+                        
+                         $(".slide-2").attr("src",'<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-2-responsive.jpg');
+                        
+                         stageWidth = 650;
+                        
+                    }
 
                 jQuery(document).ready(function($) {
+                    
+                    //Ajustar imagenes de los slides para móvil
+                    
+                    
+
+                    var spriteImages = document.querySelectorAll('.slide-item__image');
+                    var spriteImagesSrc = [];
+
+                    for (var i = 0; i < spriteImages.length; i++) {
+                        var img = spriteImages[i];
+                        spriteImagesSrc.push(img.getAttribute('src'));
+                    }
+
+                    var initCanvasSlideshow = new CanvasSlideshow({
+                        sprites: spriteImagesSrc,
+                        displacementImage: '<?php echo get_stylesheet_directory_uri(); ?>/img/dmaps/2048x2048/clouds.jpg',
+                        autoPlay: true,
+                        autoPlaySpeed: [10, 3],
+                        displaceScale: [200, 70],
+                        stageWidth: stageWidth                        
+                    });
 
                     $("canvas").click(function(e) {
-                        e.preventDefault();                 
+                        e.preventDefault();
 
                         $("html, body").animate({
                             scrollTop: $('#tipo_acuario').offset().top - 150

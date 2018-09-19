@@ -26,13 +26,13 @@
       
         <div class="content">
             <div class="slide-wrapper">
-                <div class="slide-item">
-                   
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-2.jpg" class="slide-item__image">
+               
+                <div class="slide-item">                   
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-2.jpg" class="slide-item__image slide-2">
                 </div>
 
-                <div class="slide-item">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-1.jpg" class="slide-item__image">
+                <div class="slide-item hidden">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/slide-1.jpg" class="slide-item__image slide-1">
                 </div>
 
             </div>

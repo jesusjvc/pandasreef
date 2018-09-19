@@ -786,6 +786,9 @@ footer {
     padding-top: 0;
     transform: scale(2) translateY(15px);
   }
+  canvas {
+    touch-action: auto !important;
+  }
   /*Esquema por defecto para las secciones*/
   .grid .col {
     width: 100%;
