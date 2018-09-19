@@ -12,7 +12,7 @@
                 </p>
 
                 <p class="txt-azul">
-                    ¡Panda´s Reff es su mejor opción!
+                    ¡Panda´s Reef es su mejor opción!
                 </p>
             </div>
             <div class="col fondo"></div>
