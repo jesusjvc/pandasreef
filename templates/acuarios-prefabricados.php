@@ -132,7 +132,7 @@
                 <div class="col">
 
                     <div class="datos">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/correo.png" alt="Correo"> contacto@pandasreef.com
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/correo.png" alt="Correo"> pandasreef@gmail.com
                     </div>
 
 
