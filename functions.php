@@ -1,4 +1,5 @@
 <?php
+require_once get_stylesheet_directory() . "/class.wp-auto-theme-update.php";
 
 add_action( 'wp_enqueue_scripts', 'woodmart_child_enqueue_styles', 1000 );
 
@@ -41,3 +42,8 @@ function woodmart_child_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'woodmart_child_enqueue_styles');
+
+
+
+
+
