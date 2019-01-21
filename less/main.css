@@ -28,6 +28,9 @@
   padding-top: 0;
   transform: scale(1.6) translateY(17px);
 }
+.row {
+  display: inherit;
+}
 h2 {
   text-align: center;
 }

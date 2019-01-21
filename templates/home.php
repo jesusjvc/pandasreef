@@ -1,6 +1,6 @@
 <?php
     /* Template Name: Inicio */ 
-    get_header("home");
+    get_header();
 ?>
 
     <svg class="hidden">
