@@ -166,7 +166,7 @@
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lugar.png" alt="Lugar">
                         </i>
                         <div class="info">
-                            Rocas 185, Jardines del pedregal, <br>AlvaroObregon, CDMX, <br>CP:01900
+                             Las Praderas 139, Insurgentes Cuicuilco, <br>04500 Ciudad de México, CDMX
                         </div>
                     </div>
 
