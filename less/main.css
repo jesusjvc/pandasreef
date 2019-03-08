@@ -777,6 +777,10 @@ footer {
     transform: scale(1.6) translateY(11px);
   }
 }
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: inherit;
+}
 /*@media screen and (orientation:portrait) {
     
 }
@@ -809,6 +813,15 @@ footer {
     margin: 0 auto;
     display: block;
   }
+  h2 {
+    text-align: center!important;
+    left: auto!important;
+    right: auto!important;
+  }
+  h2 i {
+    left: auto!important;
+    right: auto!important;
+  }
   .template-section .col {
     min-height: auto;
     padding: 20px;
@@ -822,12 +835,10 @@ footer {
   #tipo_acuario h2 {
     text-align: center;
     position: relative;
-    left: 50px;
     margin-bottom: 50px;
   }
   #tipo_acuario h2 i {
     position: relative;
-    left: -50px;
   }
   #tipo_acuario .caracteristicas1 img,
   #tipo_acuario .caracteristicas2 img {
@@ -857,7 +868,6 @@ footer {
   #acerca_de h2 {
     position: relative;
     padding-top: 40px;
-    left: -50px;
     margin-bottom: 0px;
     text-align: center;
   }
@@ -909,38 +919,41 @@ footer {
     display: block;
     text-transform: uppercase;
   }
-}
-#pasos h2 {
-  text-align: center;
-}
-#pasos h2 i {
-  position: relative;
-  left: 0px;
-}
-#como-pagar h2 {
-  text-align: right;
-  position: relative;
-  left: 00px;
-  margin-bottom: 00px;
-}
-#como-pagar h2 i {
-  position: relative;
-  left: 00px;
-}
-#como-pagar img {
-  float: center;
-  position: relative;
-  right: 0px;
-}
-#como-pagar ul {
-  position: relative;
-  left: -50px;
-  margin-left: 50px;
-}
-#como-pagar ul li strong {
-  color: #030947;
-  display: block;
-  text-transform: uppercase;
+  #pasos h2 {
+    text-align: center;
+  }
+  #pasos h2 i {
+    position: relative;
+  }
+  #como-pagar h2 {
+    text-align: right;
+    position: relative;
+    margin-bottom: 00px;
+  }
+  #como-pagar h2 i {
+    position: relative;
+  }
+  #como-pagar img {
+    float: center;
+    position: relative;
+    right: 0px;
+  }
+  #como-pagar ul {
+    position: relative;
+    left: -50px;
+    margin-left: 50px;
+  }
+  #como-pagar ul li strong {
+    color: #030947;
+    display: block;
+    text-transform: uppercase;
+  }
+  h2 {
+    text-align: center;
+  }
+  h2 i {
+    left: auto;
+  }
 }
 /**FOOTER***/
 .min-footer {

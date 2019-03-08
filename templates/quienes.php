@@ -71,7 +71,7 @@
     </div>
     </div>
 </section>
-
+   <?php include 'contacto.php'; ?> 
 <?php 
     get_footer();
 ?>

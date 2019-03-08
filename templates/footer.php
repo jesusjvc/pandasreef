@@ -1,4 +1,6 @@
 <footer>
+
+  
    <div class="col">
     <p>Copyright © 2018 Panda’s Reef - Diseño Web por esbrillante.mx</p></div>
     <div class="col">
